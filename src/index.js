@@ -8,13 +8,13 @@ import { Personagem } from "./modules/personagem.js"
 //     tipo: 'Mago',
 // }
 
-const personagemJose = {
-    nome: 'Jose',
-    vida: 7,
-    mana: 6,
-    level: 3,
-    tipo: 'Arqueiro',
-}
+// const personagemJose = {
+//     nome: 'Jose',
+//     vida: 7,
+//     mana: 6,
+//     level: 3,
+//     tipo: 'Arqueiro',
+// }
 
 const personagemAna = {
     nome: 'Ana',
@@ -29,5 +29,14 @@ personagemPedrinho.vida = 7
 personagemPedrinho.level = 5
 personagemPedrinho.tipo = 'Mago'
 
+const personagemJose = new Personagem()
+personagemJose.nome = 'Jose'
+personagemJose.mana = 6
+personagemJose.vida = 7
+personagemJose.level = 3
+personagemJose.tipo = 'Arqueiro'
 
-console.log(personagemPedrinho);
+
+
+console.log('Insignia de ' + personagemPedrinho.nome + ': ' + personagemPedrinho.obterInsignia());
+console.log('Insignia de ' + personagemJose.nome + ': ' + personagemJose.obterInsignia());
