@@ -11,8 +11,22 @@ export class Personagem {
         this.#level = 1
     }
 
+    aumentarLevel() {
+        this.level++
+    }
+
+    diminuirLevel() {
+        this.level--
+    }
+
     get level() {
         return this.#level
+    }
+
+    set level(novoLevel) {
+        if(novoLevel >= 1 && novoLevel <= 10) {
+            this.#level = novoLevel
+        }
     }
 
     obterInsignia() {

@@ -16,4 +16,4 @@ const personagens = [magoPatricky, magaCamila, arqueiroRafael, arqueiroMagaSteel
 new PersonagemView(personagens).render();
 
 // console.log(Personagem.verificarVencedor(arqueiroRafael, magaCamila));
-console.log(arqueiroRafael);
+// console.log(arqueiroRafael);
